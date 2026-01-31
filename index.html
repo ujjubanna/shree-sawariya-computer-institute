@@ -17,17 +17,34 @@
       background: #4338ca;
       color: #ffffff;
       text-align: center;
-      padding: 20px;
+      padding: 22px 15px;
     }
 
-    .logo-text {
-      font-size: 28px;
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #4338ca;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: bold;
+      margin: 0 auto 12px;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
-    .tagline {
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .subtitle {
       font-size: 14px;
-      margin-top: 6px;
       opacity: 0.9;
     }
 
@@ -40,7 +57,7 @@
     .card {
       background: #ffffff;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
@@ -50,14 +67,25 @@
       color: #4338ca;
     }
 
-    ul {
-      padding-left: 20px;
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    a {
-      color: #2563eb;
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 12px;
+      background: #4338ca;
+      color: #ffffff;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
+    }
+
+    .btn.green {
+      background: #16a34a;
     }
 
     footer {
@@ -73,45 +101,37 @@
 <body>
 
   <header>
-    <div class="logo-text">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</div>
-    <div class="tagline">RS-CIT एवं Tally कोर्स ट्रेनिंग सेंटर</div>
+    <div class="logo">
+      श्री सांवरिया<br>कंप्यूटर<br>इंस्टिट्यूट
+    </div>
+    <div class="title">एडमिशन ओपन</div>
+    <div class="subtitle">
+      परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें
+    </div>
   </header>
 
   <main>
 
     <div class="card">
-      <h2>हमारे कोर्स</h2>
-      <ul>
-        <li>RS-CIT (राजस्थान सरकार मान्यता प्राप्त)</li>
-        <li>Tally with GST</li>
-        <li>Basic Computer Course</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>एडमिशन जानकारी</h2>
       <p>
-        नए बैच के लिए एडमिशन चालू हैं।  
-        परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर प्रशिक्षण दिया जाता है।
+        फोकस्ड ट्रेनिंग | साफ मार्गदर्शन | पूरी प्रैक्टिकल प्रैक्टिस<br>
+        विद्यार्थियों और कामकाजी प्रोफेशनल्स के लिए परफेक्ट
       </p>
+
+      <div class="buttons">
+        <a class="btn" href="rscit.html">RS-CIT कोर्स देखें</a>
+        <a class="btn" href="tally.html">Tally कोर्स देखें</a>
+      </div>
     </div>
 
     <div class="card">
       <h2>संपर्क करें</h2>
-      <p>
-        📍 Sawariya Computer Institute<br><br>
 
-        📞 मोबाइल 1:
-        <a href="tel:+917425805337">7425805337</a><br><br>
+      📞 <a href="tel:+917425805337">7425805337</a><br>
+      📞 <a href="tel:+917851988875">7851988875</a><br><br>
 
-        📞 मोबाइल 2:
-        <a href="tel:+917851988875">7851988875</a><br><br>
-
-        📧 ई-मेल:
-        <a href="mailto:ujjubanna123@gmail.com">
-          ujjubanna123@gmail.com
-        </a>
-      </p>
+      📧 <a href="mailto:ujjubanna123@gmail.com">
+      ujjubanna123@gmail.com</a>
     </div>
 
   </main>
