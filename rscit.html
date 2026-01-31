@@ -1,311 +1,154 @@
--1
-+1
-    <meta property="og:title" content="RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प" />
-    <meta
-      property="og:description"
-      content="RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प। कॉल, व्हाट्सएप, ईमेल, इंस्टाग्राम और लोकेशन के साथ तुरंत संपर्क करें।"
-      content="RS-CIT राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। सरकारी और निजी नौकरी के लिए अनिवार्य।"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://replit.com/public/images/opengraph.png" />
--1
-+1
-    <meta name="twitter:title" content="RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प" />
-    <meta
-      name="twitter:description"
-      content="RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प। कॉल, व्हाट्सएप, ईमेल, इंस्टाग्राम और लोकेशन के साथ तुरंत संपर्क करें।"
-      content="RS-CIT राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। सरकारी और निजी नौकरी के लिए अनिवार्य।"
-    />
-    <meta name="twitter:image" content="https://replit.com/public/images/opengraph.png" />
--216
+-32
 +92
-        --blue-800: #0e2f59;
-        --blue-700: #16457f;
-        --blue-500: #2a79e6;
-        --gold-500: #d4af37;
-        --gold-400: #e5c35a;
-        --text: #0d1729;
-        --muted: #5a6b86;
-        --card: rgba(255, 255, 255, 0.88);
-        --card: rgba(255, 255, 255, 0.92);
-        --stroke: rgba(10, 34, 66, 0.12);
-        --shadow: 0 18px 40px rgba(6, 22, 45, 0.16);
-        --radius: 18px;
-        --container: 980px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>RS-CIT कोर्स - श्री सांवरिया</title>
+    <title>RS-CIT कोर्स - श्री सांवरिया कंप्यूटर इंस्टिट्यूट</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #0f172a;
+        --secondary: #1e293b;
+        --accent: #d4af37;
+        --bg: #f8fafc;
+        --white: #ffffff;
+        --text: #1e293b;
+        --text-muted: #64748b;
       }
-      * {
-        box-sizing: border-box;
       * { box-sizing: border-box; }
-      html, body { height: 100%; margin: 0; }
-      body {
-        font-family: "Hind", "Poppins", system-ui;
-        color: var(--text);
-        background: radial-gradient(1200px 700px at 20% 0%, rgba(42, 121, 230, 0.22), transparent 55%),
-                    linear-gradient(180deg, #f7fbff 0%, #ffffff 55%);
-      }
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        margin: 0;
-        font-family: "Hind", "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        color: var(--text);
-        background:
-          radial-gradient(1200px 700px at 20% 0%, rgba(42, 121, 230, 0.22), transparent 55%),
-          radial-gradient(1000px 650px at 100% 40%, rgba(212, 175, 55, 0.18), transparent 52%),
-          linear-gradient(180deg, #f7fbff 0%, #ffffff 55%, #f6f8ff 100%);
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .container {
-        width: min(100%, var(--container));
-        margin: 0 auto;
-        padding: 18px 16px 28px;
-      }
-      .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 10px 0 16px;
-      }
-      .home {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 12px;
-        border-radius: 14px;
-        border: 1px solid rgba(10, 34, 66, 0.12);
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 12px 20px rgba(6, 22, 45, 0.08);
-        font-weight: 800;
-      }
-      .home:active {
-        transform: translateY(1px);
-      }
-      .badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 12px;
-        border-radius: 999px;
-        border: 1px solid rgba(212, 175, 55, 0.45);
-        background: linear-gradient(180deg, rgba(212, 175, 55, 0.20), rgba(212, 175, 55, 0.06));
-        color: var(--blue-900);
-        font-weight: 700;
-        font-size: 0.95rem;
-        white-space: nowrap;
-      }
-      .badge-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: var(--gold-500);
-        box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.18);
-      }
-      .card {
-        border-radius: 24px;
-        border: 1px solid var(--stroke);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.84) 100%);
-        box-shadow: var(--shadow);
-        overflow: hidden;
-        position: relative;
-      }
-      .card::before {
-        content: "";
-        position: absolute;
-        inset: -1px;
-        background:
-          radial-gradient(900px 400px at 20% 10%, rgba(42, 121, 230, 0.18), transparent 60%),
-          radial-gradient(700px 350px at 90% 50%, rgba(212, 175, 55, 0.16), transparent 55%);
-        pointer-events: none;
-      }
-      .card-inner {
-        position: relative;
-        padding: 22px 16px 18px;
-      }
-      h1 {
-        margin: 0;
-        font-family: "Poppins", "Hind", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        font-size: clamp(1.55rem, 4.2vw, 2.1rem);
-        line-height: 1.2;
-        letter-spacing: -0.2px;
-        color: var(--blue-950);
-      }
-      .lead {
-        margin: 10px 0 0;
-        color: rgba(13, 23, 41, 0.78);
-        line-height: 1.65;
-        font-size: 1.02rem;
-      }
-      .content {
-        margin-top: 14px;
-        padding-top: 14px;
-        border-top: 1px solid rgba(10, 34, 66, 0.10);
-        color: rgba(13, 23, 41, 0.92);
-        line-height: 1.75;
-        font-size: 1.02rem;
-        white-space: pre-line;
-      }
-      .contact {
-        margin-top: 16px;
-        display: grid;
-        gap: 10px;
-      }
-      .pill {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 10px;
-        align-items: center;
-        padding: 12px 12px;
-        border-radius: 14px;
-        border: 1px solid rgba(10, 34, 66, 0.12);
-        background: rgba(255, 255, 255, 0.92);
-        box-shadow: 0 14px 22px rgba(6, 22, 45, 0.08);
-        transition: transform 140ms ease, box-shadow 140ms ease;
-      }
-      .pill:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 16px 26px rgba(6, 22, 45, 0.10);
-      }
-      .pill-icon {
-        width: 38px;
-        height: 38px;
-        border-radius: 14px;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, rgba(22, 69, 127, 0.14), rgba(212, 175, 55, 0.12));
-        border: 1px solid rgba(212, 175, 55, 0.22);
-      }
-      .pill-text {
-        display: grid;
-        gap: 2px;
-      }
-      .pill-label {
-        font-size: 0.9rem;
-        color: var(--muted);
-        font-weight: 700;
-      }
-      .pill-value {
-        font-size: 1.02rem;
-        font-weight: 800;
-        color: var(--blue-950);
-        overflow-wrap: anywhere;
-      }
-      .footer {
-        padding: 18px 0 22px;
-        color: rgba(13, 23, 41, 0.66);
-        font-size: 0.95rem;
-        text-align: center;
-      }
-      .footer strong {
-        color: var(--blue-950);
-      }
-      @media (min-width: 860px) {
-        .card-inner {
-          padding: 28px 26px 22px;
-        }
-        .contact {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .pill {
-          transition: none;
-        }
-      }
-      a { color: inherit; text-decoration: none; }
-      .container { width: min(100%, var(--container)); margin: 0 auto; padding: 18px 16px 28px; }
-      .topbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 0 16px; }
-      .home { display: inline-flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; border: 1px solid var(--stroke); background: white; font-weight: 800; box-shadow: 0 8px 15px rgba(0,0,0,0.05); }
-      .badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(212, 175, 55, 0.45); background: rgba(212, 175, 55, 0.1); color: var(--blue-900); font-weight: 700; }
-      .card { border-radius: 24px; border: 1px solid var(--stroke); background: var(--card); box-shadow: var(--shadow); overflow: hidden; }
-      .card-inner { padding: 22px 16px; }
-      h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); color: var(--blue-950); margin: 0 0 15px; }
-      section { margin-bottom: 25px; }
-      h2 { font-size: 1.3rem; color: var(--blue-800); border-left: 4px solid var(--gold-500); padding-left: 10px; margin-bottom: 12px; }
-      ul { padding-left: 20px; line-height: 1.7; }
-      li { margin-bottom: 8px; }
-      .fee-box { background: rgba(22, 69, 127, 0.05); padding: 15px; border-radius: 12px; display: inline-block; font-weight: 700; color: var(--blue-900); }
-      .contact-grid { display: grid; gap: 10px; margin-top: 30px; }
-      .pill { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; padding: 12px; border-radius: 14px; border: 1px solid var(--stroke); background: white; transition: transform 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-      .pill:hover { transform: translateY(-2px); }
-      .pill-icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); }
-      .pill-label { font-size: 0.85rem; color: var(--muted); }
-      .pill-value { font-weight: 800; color: var(--blue-950); }
-      .footer { text-align: center; padding: 30px 0; color: var(--muted); border-top: 1px solid var(--stroke); margin-top: 40px; }
-      @media (min-width: 768px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+      body { margin: 0; font-family: 'Hind', sans-serif; background: var(--bg); color: var(--text); }
+      .container { width: min(100%, 700px); margin: 0 auto; padding: 30px 20px; }
+      .back-btn { display: inline-block; padding: 10px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 12px; margin-bottom: 20px; font-weight: 600; }
+      .card { background: var(--white); border-radius: 24px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+      h1 { color: var(--primary); font-size: 1.8rem; margin-top: 0; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+      section { margin-top: 25px; }
+      h2 { color: var(--primary); font-size: 1.3rem; margin-bottom: 10px; }
+      ul { padding-left: 20px; }
+      li { margin-bottom: 10px; line-height: 1.6; }
+      .fee-tag { background: #f1f5f9; padding: 15px; border-radius: 15px; border-left: 5px solid var(--accent); font-weight: 700; }
+      .contact-box { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .c-item { background: var(--primary); color: white; padding: 15px; text-align: center; border-radius: 15px; text-decoration: none; font-weight: 600; }
+      * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+      body { margin: 0; font-family: 'Hind', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+      .container { width: min(100%, 800px); margin: 0 auto; padding: 20px; }
+      .back-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 15px; margin-bottom: 20px; font-weight: 600; transition: transform 0.2s; }
+      .back-btn:active { transform: scale(0.95); }
+      .card { background: var(--white); border-radius: 30px; padding: 35px 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); }
+      h1 { color: var(--primary); font-size: 1.8rem; margin: 0 0 20px; border-bottom: 4px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+      .intro { font-size: 1.1rem; margin-bottom: 30px; color: var(--text); }
+      section { margin-bottom: 35px; }
+      h2 { color: var(--primary); font-size: 1.4rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+      h2::before { content: ''; display: block; width: 6px; height: 24px; background: var(--accent); border-radius: 3px; }
+      ul { padding-left: 5px; list-style: none; }
+      li { margin-bottom: 12px; display: flex; gap: 10px; align-items: flex-start; }
+      li::before { content: '•'; color: var(--accent); font-weight: bold; font-size: 1.5rem; line-height: 1; }
+      .fee-card { background: #f1f5f9; padding: 25px; border-radius: 20px; border-left: 6px solid var(--accent); margin: 30px 0; }
+      .fee-card p { margin: 5px 0; font-weight: 700; font-size: 1.2rem; color: var(--primary); }
+      .course-module { background: #fff; border: 1px solid #e2e8f0; padding: 20px; border-radius: 20px; margin-bottom: 15px; }
+      .course-module h3 { margin: 0 0 10px; color: var(--primary); font-size: 1.2rem; }
+      .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 40px; }
+      .contact-item { background: var(--primary); color: white; padding: 18px; text-align: center; border-radius: 18px; text-decoration: none; font-weight: 700; display: flex; flex-direction: column; gap: 5px; transition: transform 0.2s; }
+      .contact-item:active { transform: scale(0.96); }
+      .footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 0.9rem; }
+      @media (max-width: 500px) { .contact-grid { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
-    <main class="container" data-testid="page-rscit">
-    <main class="container">
-      <div class="topbar">
-        <a class="home" href="/" data-testid="link-home">
-          <span aria-hidden="true">←</span>
-          <span>होम</span>
-        </a>
-        <a href="/" class="home">← होम</a>
-        <div class="badge"><span>RS-CIT</span></div>
-      </div>
-        <div class="badge" data-testid="badge-course">
-          <span class="badge-dot" aria-hidden="true"></span>
-          <span>RS-CIT</span>
+    <div class="container">
+      <a href="/" class="back-btn">← होम पेज</a>
+      <a href="/" class="back-btn">← मुख्य पेज पर जाएं</a>
+      
       <div class="card">
-        <div class="card-inner">
-          <h1>RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प</h1>
+        <h1>RS-CIT कोर्स जानकारी</h1>
+        <p>RS-CIT राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। यह सरकारी और निजी नौकरी के लिए अनिवार्य है।</p>
+        <h1>RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प</h1>
+        
+        <p class="intro">RS-CIT (Rajasthan State Certificate in Information Technology) राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। यह कोर्स उन सभी के लिए बहुत जरूरी है जो ऑफिस, बैंकिंग, सरकारी नौकरी या निजी नौकरी में कंप्यूटर का उपयोग करना चाहते हैं।</p>
+        <section>
+          <h2>कोर्स क्यों जरूरी है?</h2>
+          <h2>RS-CIT कोर्स क्यों जरूरी है?</h2>
+          <ul>
+            <li>सरकारी नौकरी में चयन के लिए अनिवार्य सर्टिफिकेट।</li>
+            <li>ऑफिस वर्क, डेटा एंट्री और ई-मेल में निपुणता।</li>
+            <li>बैंकिंग और अन्य परीक्षाओं में मददगार।</li>
+            <li>आज हर क्षेत्र में कंप्यूटर ज्ञान अनिवार्य हो गया है।</li>
+            <li>सरकारी और निजी नौकरी में RS-CIT सर्टिफिकेट से चयन आसान होता है।</li>
+            <li>ऑफिस का काम, डेटा एंट्री, रिपोर्ट, प्रेजेंटेशन और ई-मेल लिखना सीखते हैं।</li>
+          </ul>
+        </section>
+        <section>
+          <h2>क्या सीखेंगे?</h2>
+          <h2>RS-CIT कोर्स कहां-कहां अनिवार्य है?</h2>
+          <ul>
+            <li><strong>MS Word:</strong> रिज्यूमे, लेटर और बिल बनाना।</li>
+            <li><strong>MS Excel:</strong> फॉर्मूला और डेटाबेस मैनेजमेंट।</li>
+            <li><strong>MS PowerPoint:</strong> प्रोफेशनल प्रेजेंटेशन बनाना।</li>
+            <li><strong>Type:</strong> हिंदी और अंग्रेजी टाइपिंग अभ्यास।</li>
+            <li>राजस्थान के सरकारी विभागों में नौकरी के लिए अनिवार्य।</li>
+            <li>बैंकिंग, बीमा और ऑफिस जॉब में लाभकारी।</li>
+            <li>सरकारी और निजी परीक्षाओं में मददगार।</li>
+          </ul>
+        </section>
+        <div class="fee-card">
+          <h2>अवधि और फीस</h2>
+          <p>अवधि: 3 महीने (थ्योरी + प्रैक्टिकल)</p>
+          <p>फीस: ₹4200</p>
+        </div>
+        <section>
+          <div class="fee-tag">
+            अवधि: 3 महीने<br>
+            फीस: ₹4200
+          <h2>RS-CIT में क्या सीखेंगे?</h2>
           
-          <section>
-            <p>RS-CIT (Rajasthan State Certificate in Information Technology) राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। यह कोर्स उन सभी के लिए बहुत जरूरी है जो ऑफिस, बैंकिंग, सरकारी नौकरी या निजी नौकरी में कंप्यूटर का उपयोग करना चाहते हैं।</p>
-          </section>
-          <section>
-            <h2>RS-CIT कोर्स क्यों जरूरी है?</h2>
-            <ul>
-              <li>आज हर क्षेत्र में कंप्यूटर ज्ञान अनिवार्य हो गया है।</li>
-              <li>सरकारी और निजी नौकरी में RS-CIT सर्टिफिकेट से चयन आसान होता है।</li>
-              <li>ऑफिस का काम, डेटा एंट्री, रिपोर्ट, प्रेजेंटेशन और ई-मेल लिखना सीखते हैं।</li>
-            </ul>
-          </section>
-          <section>
-            <h2>RS-CIT कोर्स कहां-कहां अनिवार्य है?</h2>
-            <ul>
-              <li>राजस्थान के सरकारी विभागों में नौकरी के लिए अनिवार्य।</li>
-              <li>बैंकिंग, बीमा और ऑफिस जॉब में लाभकारी।</li>
-              <li>सरकारी और निजी परीक्षाओं में मददगार।</li>
-            </ul>
-          </section>
-          <section>
-            <h2>अवधि और फीस</h2>
-            <div class="fee-box">
-              अवधि: 3 महीने (थ्योरी + प्रैक्टिकल)<br>
-              फीस: ₹4200
-            </div>
-          </section>
-          <section>
-            <h2>RS-CIT में क्या सीखेंगे?</h2>
+          <div class="course-module">
             <h3>1️⃣ MS Word</h3>
             <ul>
-              <li>रिज्यूमे / बायोडाटा बनाना, मैगजीन पेज डिजाइन, पेम्फलेट और टेम्पलेट, बिल, इनवॉइस, लेटर, हिंदी और अंग्रेजी टाइपिंग अभ्यास</li>
+              <li>रिज्यूमे / बायोडाटा बनाना</li>
+              <li>मैगजीन पेज डिजाइन</li>
+              <li>पेम्फलेट और टेम्पलेट</li>
+              <li>बिल, इनवॉइस, लेटर</li>
+              <li>हिंदी और अंग्रेजी टाइपिंग अभ्यास</li>
             </ul>
+          </div>
+          <div class="course-module">
             <h3>2️⃣ MS Excel</h3>
             <ul>
-              <li>बिल और रिजल्ट शीट, डेटा एंट्री और डेटाबेस, फॉर्मूला और प्रैक्टिकल</li>
+              <li>बिल और रिजल्ट शीट</li>
+              <li>डेटा एंट्री और डेटाबेस</li>
+              <li>फॉर्मूला और प्रैक्टिकल</li>
             </ul>
+          </div>
+          <div class="course-module">
             <h3>3️⃣ MS PowerPoint</h3>
             <ul>
-              <li>प्रोफेशनल प्रेजेंटेशन, ऑफिस और इंटरव्यू स्लाइड्स, पूरी प्रैक्टिकल ट्रेनिंग</li>
+              <li>प्रोफेशनल प्रेजेंटेशन</li>
+              <li>ऑफिस और इंटरव्यू स्लाइड्स</li>
+              <li>पूरी प्रैक्टिकल ट्रेनिंग</li>
             </ul>
-          </section>
-          <section>
-            <h2>RS-CIT के लाभ</h2>
-            <ul>
-              <li>प्रैक्टिकल + थ्योरी, नौकरी और इंटरव्यू की तैयारी, राजस्थान सरकार मान्यता प्राप्त सर्टिफिकेट</li>
-            </ul>
-          </section>
-          <div cl...
-[truncated]
-[truncated]
-[truncated]
+          </div>
+        </section>
+        <div class="contact-box">
+          <a href="tel:7425805337" class="c-item">कॉल करें</a>
+          <a href="https://wa.me/917425805337" class="c-item">व्हाट्सएप</a>
+        <section>
+          <h2>RS-CIT के लाभ</h2>
+          <ul>
+            <li>प्रैक्टिकल + थ्योरी</li>
+            <li>नौकरी और इंटरव्यू की तैयारी</li>
+            <li>राजस्थान सरकार मान्यता प्राप्त सर्टिफिकेट</li>
+          </ul>
+        </section>
+        <div class="contact-grid">
+          <a href="tel:7425805337" class="contact-item">📞 कॉल करें</a>
+          <a href="https://wa.me/917425805337" class="contact-item">💬 व्हाट्सएप</a>
+          <a href="mailto:ujjubanna123@gmail.com" class="contact-item">✉️ ईमेल भेजें</a>
+          <a href="https://instagram.com/sawariya_computerhub" target="_blank" class="contact-item">📸 इंस्टाग्राम</a>
+        </div>
+      </div>
+      <footer class="footer">
+        © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>सभी अधिकार सुरक्षित
+      </footer>
+    </div>
+  </body>
+</html>
