@@ -1,253 +1,212 @@
--1
-+1
+<!DOCTYPE html>
 <html lang="hi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta property="og:title" content="श्री सांवरिया कंप्यूटर इंस्टिट्यूट" />
-    <meta property="og:description" content="एडमिशन ओपन — परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें।" />
--1
-+0
-        --primary: #0f172a;
-        --secondary: #1e293b;
-        --accent: #d4af37;
-        --accent-glow: rgba(212, 175, 55, 0.4);
-        --bg: #f8fafc;
-        --white: #ffffff;
-        --text: #0f172a;
--11
-+21
-        --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      }
-      * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-      * { 
-        box-sizing: border-box; 
-        -webkit-tap-highlight-color: transparent;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        margin: 0;
-        font-family: 'Hind', 'Poppins', sans-serif;
-        background-color: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-        display: flex;
-        flex-direction: column;
-        line-height: 1.5;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      .container {
-        width: min(100%, 800px);
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        padding: 20px 16px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .glass-card {
-        background: var(--white);
-        border-radius: 32px;
-        padding: 40px 20px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.8);
-        border-radius: 24px;
-        padding: 30px 20px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
--64
-+50
-      .glass-card::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; height: 6px;
-        top: 0; left: 0; right: 0; height: 4px;
-        background: var(--accent);
-      }
-      .header-brand {
-        margin-bottom: 30px;
-      }
-      .brand-name {
-        font-size: 2.2rem;
-        font-weight: 800;
-        color: var(--primary);
-        margin: 0;
-        letter-spacing: -1px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      }
-      .brand-tagline {
-        color: var(--accent);
-        font-weight: 700;
-        letter-spacing: 2px;
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-      }
-      .brand-name {
-        font-size: 1.8rem;
-        font-weight: 800;
-        color: var(--primary);
-        letter-spacing: -0.5px;
-      }
-      h1 {
-        font-size: 2.5rem;
-        font-size: 2.2rem;
-        margin: 15px 0 10px;
-        background: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 20px 0 10px;
-      }
-      .hero-desc {
-        font-size: 1.1rem;
-        font-size: 1rem;
-        color: var(--text-muted);
-        max-width: 500px;
-        margin: 0 auto 35px;
-        margin-bottom: 25px;
-        padding: 0 10px;
-      }
-      .btn-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-bottom: 25px;
-      }
-      .btn {
-        padding: 20px;
-        border-radius: 20px;
-        padding: 16px;
-        border-radius: 16px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1.1rem;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        transition: transform 0.1s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-      }
-      .btn:active {
-        transform: scale(0.97);
-      }
-      .btn-primary {
-        background: var(--primary);
-        color: var(--white);
-        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
-      }
-      .btn-accent {
-        background: var(--accent);
-        color: var(--primary);
-        box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
-      }
-      .btn:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-      }
-      .contact-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-top: 20px;
-        gap: 10px;
-      }
-      .contact-item {
-        background: #f1f5f9;
-        padding: 15px;
-        border-radius: 18px;
-        padding: 12px 5px;
-        border-radius: 14px;
-        text-decoration: none;
-        color: var(--primary);
-        font-weight: 600;
-        font-size: 0.9rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        transition: all 0.2s;
-        border: 1px solid transparent;
-      }
-      .contact-item:hover {
-        background: var(--white);
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-      .contact-item i { font-size: 1.5rem; }
-        gap: 4px;
-      }
-      .contact-item i { font-size: 1.2rem; }
-      /* Individual styling for full-width items if needed on mobile */
-      .contact-item:last-child {
-        grid-column: span 2;
-      }
-      .footer {
-        margin-top: auto;
-        padding: 40px 20px;
-        padding: 20px;
-        text-align: center;
-        color: var(--text-muted);
-        font-size: 0.9rem;
-      }
-      @media (max-width: 500px) {
-        .btn-grid { grid-template-columns: 1fr; }
-        .contact-grid { grid-template-columns: repeat(2, 1fr); }
-        .contact-item:last-child { grid-column: span 2; }
-        font-size: 0.85rem;
-      }
-      @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(15px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .fade-up {
-        animation: fadeUp 0.8s ease-out forwards;
-      }
-      @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-        animation: fadeUp 0.6s ease-out forwards;
-      }
-    </style>
-  </head>
--1
-+1
-        </div>
-        <h1>एडमिशन ओपन</h1>
-        <p class="hero-desc">परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें और अपना भविष्य उज्जवल बनाएं।</p>
-        <p class="hero-desc">परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें</p>
-        <div class="btn-grid">
-          <a href="rscit.html" class="btn btn-primary">RS-CIT कोर्स</a>
--5
-+4
-          <a href="https://maps.google.com/?q=%E0%A4%B2%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%8D%E0%A4%AE%E0%A4%A3%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE,%20%E0%A4%A8%E0%A4%BE%E0%A4%A5%20%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%AA%E0%A4%BE%E0%A4%B8,%20%E0%A4%A8%E0%A4%BE%E0%A4%A3%E0%A4%BE" target="_blank" class="contact-item"><i>📍</i>लोकेशन</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>श्री सांवरिया कंप्यूटर इंस्टिट्यूट</title>
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="श्री सांवरिया कंप्यूटर इंस्टिट्यूट" />
+  <meta property="og:description" content="एडमिशन ओपन — परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें।" />
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #d4af37;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --gradient: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: auto;
+      padding: 20px 16px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--white);
+      width: 100%;
+      padding: 28px 20px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      text-align: center;
+      position: relative;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 24px 24px 0 0;
+    }
+
+    /* Branding */
+    .brand-name {
+      font-size: clamp(1.4rem, 6vw, 1.9rem);
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .brand-tagline {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 8vw, 2.2rem);
+      margin-bottom: 10px;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 22px;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    /* Buttons */
+    .btn-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 14px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.15s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .contact-item {
+      background: #f1f5f9;
+      padding: 12px 6px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-item:last-child {
+      grid-column: span 2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="brand-name">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</div>
+      <div class="brand-tagline">RS-CIT & Tally Training Center</div>
+
+      <h1>एडमिशन ओपन</h1>
+      <p class="hero-desc">
+        परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें
+      </p>
+
+      <div class="btn-grid">
+        <a href="rscit.html" class="btn btn-primary">RS-CIT कोर्स</a>
+        <a href="tally.html" class="btn btn-accent">Tally with GST</a>
       </div>
-      <footer class="footer">
-        © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>
-        सभी अधिकार सुरक्षित
-      </footer>
+
+      <div class="contact-grid">
+        <a href="tel:7425805337" class="contact-item">📞 7425805337</a>
+        <a href="tel:7851988875" class="contact-item">📞 7851988875</a>
+        <a href="mailto:ujjubanna123@gmail.com" class="contact-item">📧 Email</a>
+        <a href="https://maps.google.com/?q=लक्ष्मणपुरा, नाथ जी महाराज मंदिर के पास, नाणा"
+           target="_blank"
+           class="contact-item">📍 Location</a>
+      </div>
+
     </div>
-    <footer class="footer">
-      © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>
-      सभी अधिकार सुरक्षित
-    </footer>
-  </body>
+  </div>
+
+  <footer>
+    © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>
+    सभी अधिकार सुरक्षित
+  </footer>
+
+</body>
 </html>
