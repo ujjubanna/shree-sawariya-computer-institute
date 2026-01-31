@@ -1,0 +1,30 @@
+-4
++0
+        padding: 10px;
+      }
+      .logo::after {
+        display: none;
+      }
+      .brand-title {
+        margin: 0;
+        font-family: "Poppins", "Hind", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+-1
++1
+          <div class="hero-inner">
+            <div class="brand">
+              <div class="logo" data-testid="img-logo">
+                <img src="/assets/logo.png" alt="Shree Sawariya Logo" />
+                <img src="/assets/logo.png" alt="श्री सांवरिया कंप्यूटर इंस्टिट्यूट लोगो" />
+              </div>
+              <p class="brand-title" data-testid="text-brand">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</p>
+-5
++0
+        </section>
+      </main>
+    </div>
+    <script>
+      // Minimal JS: none required for basic navigation/links.
+      // Keeping this for future enhancements while staying beginner-friendly.
+    </script>
+  </body>
+</html>
