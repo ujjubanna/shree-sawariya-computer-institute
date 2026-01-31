@@ -1,12 +1,14 @@
--7
-+8
-    <style>
-      :root {
-        --primary: #1e3a8a; /* Professional Royal Blue */
-        --accent: #b45309;  /* Deep Golden */
-        --accent-light: #f59e0b; /* Bright Golden */
-        --bg: #ffffff;
-        --card-bg: #f8fafc;
+-1
++1
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta property="og:title" content="श्री सांवरिया कंप्यूटर इंस्टिट्यूट" />
+    <meta property="og:description" content="एडमिशन ओपन — परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें।" />
+-1
++0
         --primary: #0f172a;
         --secondary: #1e293b;
         --accent: #d4af37;
@@ -14,26 +16,41 @@
         --bg: #f8fafc;
         --white: #ffffff;
         --text: #0f172a;
-        --text-muted: #475569;
-        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        --text-muted: #64748b;
+-11
++21
         --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
       }
       * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
--105
-+140
+      * { 
+        box-sizing: border-box; 
+        -webkit-tap-highlight-color: transparent;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        font-family: 'Hind', 'Poppins', sans-serif;
         background-color: var(--bg);
         color: var(--text);
         line-height: 1.6;
         display: flex;
         flex-direction: column;
+        line-height: 1.5;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
       .container {
-        width: min(100%, 600px);
         width: min(100%, 800px);
+        width: 100%;
+        max-width: 500px;
         margin: 0 auto;
         padding: 40px 20px;
+        padding: 20px 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       .glass-card {
         background: var(--white);
@@ -41,21 +58,20 @@
         padding: 40px 20px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 24px;
+        padding: 30px 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
         text-align: center;
-      }
-      .header {
-        margin-bottom: 40px;
-      }
-      .title {
-        font-size: 2rem;
-        font-weight: 700;
         position: relative;
         overflow: hidden;
-      }
+-64
++50
       .glass-card::before {
         content: '';
         position: absolute;
         top: 0; left: 0; right: 0; height: 6px;
+        top: 0; left: 0; right: 0; height: 4px;
         background: var(--accent);
       }
       .header-brand {
@@ -66,38 +82,29 @@
         font-weight: 800;
         color: var(--primary);
         margin: 0;
-        letter-spacing: -0.5px;
-      }
-      .subtitle {
-        font-size: 1.1rem;
         letter-spacing: -1px;
         text-transform: uppercase;
+        margin-bottom: 20px;
       }
       .brand-tagline {
         color: var(--accent);
-        font-weight: 600;
-        margin-top: 5px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      .hero-card {
-        background: var(--card-bg);
-        border-radius: 24px;
-        padding: 30px 20px;
-        box-shadow: var(--shadow);
-        border: 1px solid rgba(30, 58, 138, 0.1);
-        margin-bottom: 30px;
         font-weight: 700;
         letter-spacing: 2px;
         font-size: 0.9rem;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+      .brand-name {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        letter-spacing: -0.5px;
       }
       h1 {
-        font-size: 2.2rem;
-        color: var(--primary);
-        margin: 0 0 10px;
-      }
-      .promo-text {
         font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin: 15px 0 10px;
         background: var(--gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -105,55 +112,41 @@
       }
       .hero-desc {
         font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--text-muted);
-        margin-bottom: 25px;
-      }
-      .btn-group {
         max-width: 500px;
         margin: 0 auto 35px;
+        margin-bottom: 25px;
+        padding: 0 10px;
       }
       .btn-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
-        margin-bottom: 30px;
         margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 25px;
       }
       .btn {
-        display: block;
-        padding: 18px;
-        border-radius: 16px;
         padding: 20px;
         border-radius: 20px;
+        padding: 16px;
+        border-radius: 16px;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.1rem;
-        transition: all 0.2s;
-      }
-      .btn-primary {
-        background: var(--primary);
-        color: white;
-        box-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.3);
-      }
-      .btn-primary:active { transform: scale(0.98); }
-      .btn-outline {
-        border: 2px solid var(--primary);
-        color: var(--primary);
-      }
-      .contact-section {
-        background: white;
-        border-radius: 20px;
-        padding: 20px;
-        border: 1px solid #e2e8f0;
-      }
-      .contact-link {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.1s;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        padding: 12px;
-        color: var(--text);
+        width: 100%;
+      }
+      .btn:active {
+        transform: scale(0.97);
       }
       .btn-primary {
         background: var(--primary);
@@ -174,18 +167,18 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         margin-top: 20px;
+        gap: 10px;
       }
       .contact-item {
         background: #f1f5f9;
         padding: 15px;
         border-radius: 18px;
+        padding: 12px 5px;
+        border-radius: 14px;
         text-decoration: none;
         color: var(--primary);
         font-weight: 600;
-        border-bottom: 1px solid #f1f5f9;
-      }
-      .contact-link:last-child { border-bottom: none; }
-      .contact-link span { color: var(--accent); font-size: 1.2rem; }
+        font-size: 0.9rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -199,26 +192,30 @@
         color: var(--accent);
       }
       .contact-item i { font-size: 1.5rem; }
+        gap: 4px;
+      }
+      .contact-item i { font-size: 1.2rem; }
+      /* Individual styling for full-width items if needed on mobile */
+      .contact-item:last-child {
+        grid-column: span 2;
+      }
       .footer {
-        margin-top: 50px;
         margin-top: auto;
         padding: 40px 20px;
+        padding: 20px;
         text-align: center;
         color: var(--text-muted);
         font-size: 0.9rem;
-        color: var(--text-muted);
-      }
-      /* Animation */
-      .fade-in {
-        animation: fadeIn 0.8s ease-out;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
       }
       @media (max-width: 500px) {
         .btn-grid { grid-template-columns: 1fr; }
         .contact-grid { grid-template-columns: repeat(2, 1fr); }
         .contact-item:last-child { grid-column: span 2; }
+        font-size: 0.85rem;
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
       }
       .fade-up {
         animation: fadeUp 0.8s ease-out forwards;
@@ -226,51 +223,31 @@
       @keyframes fadeUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
+        animation: fadeUp 0.6s ease-out forwards;
       }
     </style>
   </head>
-  <body>
-    <div class="container fade-in">
-      <div class="header">
-        <div class="subtitle">कंप्यूटर इंस्टिट्यूट</div>
-        <div class="title">श्री सांवरिया</div>
-      </div>
-      <div class="hero-card">
-    <div class="container fade-up">
-      <div class="glass-card">
-        <div class="header-brand">
-          <div class="brand-tagline">BEST COMPUTER INSTITUTE</div>
-          <h2 class="brand-name">श्री सांवरिया</h2>
+-1
++1
         </div>
         <h1>एडमिशन ओपन</h1>
-        <p class="promo-text">परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें</p>
-        <div class="btn-group">
-          <a href="rscit.html" class="btn btn-primary">RS-CIT कोर्स देखें</a>
-          <a href="tally.html" class="btn btn-outline">Tally कोर्स देखें</a>
         <p class="hero-desc">परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें और अपना भविष्य उज्जवल बनाएं।</p>
+        <p class="hero-desc">परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें</p>
         <div class="btn-grid">
           <a href="rscit.html" class="btn btn-primary">RS-CIT कोर्स</a>
-          <a href="tally.html" class="btn btn-accent">Tally कोर्स</a>
-        </div>
-        <div class="contact-section">
-          <a href="tel:7425805337" class="contact-link"><span>📞</span> 7425805337</a>
-          <a href="tel:7851988875" class="contact-link"><span>📞</span> 7851988875</a>
-          <a href="https://wa.me/917425805337" class="contact-link"><span>💬</span> व्हाट्सएप मैसेज करें</a>
-        <div class="contact-grid">
-          <a href="tel:7425805337" class="contact-item"><i>📞</i>कॉल करें</a>
-          <a href="https://wa.me/917425805337" class="contact-item"><i>💬</i>व्हाट्सएप</a>
-          <a href="mailto:ujjubanna123@gmail.com" class="contact-item"><i>✉️</i>ईमेल</a>
-          <a href="https://instagram.com/sawariya_computerhub" target="_blank" class="contact-item"><i>📸</i>इंस्टाग्राम</a>
+-5
++4
           <a href="https://maps.google.com/?q=%E0%A4%B2%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A5%8D%E0%A4%AE%E0%A4%A3%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE,%20%E0%A4%A8%E0%A4%BE%E0%A4%A5%20%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BF%E0%A4%B0%20%E0%A4%95%E0%A5%87%20%E0%A4%AA%E0%A4%BE%E0%A4%B8,%20%E0%A4%A8%E0%A4%BE%E0%A4%A3%E0%A4%BE" target="_blank" class="contact-item"><i>📍</i>लोकेशन</a>
         </div>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.9rem;">टिप: हमारा नंबर सेव करें और व्हाट्सएप पर मैसेज करें</p>
-      <div class="footer">
       <footer class="footer">
         © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>
         सभी अधिकार सुरक्षित
-      </div>
       </footer>
     </div>
+    <footer class="footer">
+      © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>
+      सभी अधिकार सुरक्षित
+    </footer>
   </body>
 </html>
