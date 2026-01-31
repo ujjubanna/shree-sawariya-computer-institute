@@ -2,165 +2,119 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>श्री सांवरिया कंप्यूटर इंस्टिट्यूट</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    /* ===== Base Styles ===== */
     body {
       margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #ffffff;
-      color: #1f2937;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6fb;
+      color: #222;
     }
 
-    a {
-      text-decoration: none;
-    }
-
-    /* ===== Layout ===== */
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
+    header {
+      background: #4338ca;
+      color: #ffffff;
       text-align: center;
+      padding: 20px;
     }
 
-    /* ===== Logo ===== */
-    .logo {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #1e3a8a, #f59e0b);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 30px auto 10px;
-      color: #ffffff;
+    .logo-text {
+      font-size: 28px;
       font-weight: bold;
-      font-size: 16px;
-      padding: 15px;
-      box-sizing: border-box;
     }
 
-    .brand-title {
-      margin: 10px 0 30px;
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    /* ===== Hero ===== */
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #1e3a8a;
-    }
-
-    h2 {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-
-    .desc {
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    /* ===== Buttons ===== */
-    .btn-group {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 12px 22px;
-      border-radius: 8px;
-      font-weight: 600;
-      color: #ffffff;
-      background: #1e3a8a;
-      transition: 0.3s;
-    }
-
-    .btn.alt {
-      background: #f59e0b;
-      color: #1f2937;
-    }
-
-    .btn:hover {
+    .tagline {
+      font-size: 14px;
+      margin-top: 6px;
       opacity: 0.9;
     }
 
-    /* ===== Contact ===== */
-    .contact {
-      margin-top: 20px;
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
     }
 
-    .contact a {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 18px;
-      border-radius: 6px;
-      background: #16a34a;
-      color: #ffffff;
-      font-weight: 600;
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
-    .contact a.call {
-      background: #2563eb;
+    h2 {
+      margin-top: 0;
+      color: #4338ca;
     }
 
-    .tip {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #374151;
+    ul {
+      padding-left: 20px;
     }
 
-    /* ===== Footer ===== */
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
-      margin-top: 50px;
+      background: #eef1ff;
+      text-align: center;
       padding: 15px;
-      font-size: 14px;
-      background: #f3f4f6;
+      font-size: 13px;
+      color: #444;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <header>
+    <div class="logo-text">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</div>
+    <div class="tagline">RS-CIT एवं Tally कोर्स ट्रेनिंग सेंटर</div>
+  </header>
 
-    <div class="logo">
-      श्री सांवरिया<br>कंप्यूटर<br>इंस्टिट्यूट
+  <main>
+
+    <div class="card">
+      <h2>हमारे कोर्स</h2>
+      <ul>
+        <li>RS-CIT (राजस्थान सरकार मान्यता प्राप्त)</li>
+        <li>Tally with GST</li>
+        <li>Basic Computer Course</li>
+      </ul>
     </div>
 
-    <p class="brand-title">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</p>
-
-    <h1>एडमिशन ओपन</h1>
-    <h2>परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें</h2>
-
-    <p class="desc">
-      फोकस्ड ट्रेनिंग | साफ मार्गदर्शन | पूरी प्रैक्टिकल प्रैक्टिस<br>
-      विद्यार्थियों और कामकाजी प्रोफेशनल्स के लिए परफेक्ट
-    </p>
-
-    <div class="btn-group">
-      <a class="btn" href="rscit.html">RS-CIT कोर्स देखें</a>
-      <a class="btn alt" href="tally.html">Tally कोर्स देखें</a>
+    <div class="card">
+      <h2>एडमिशन जानकारी</h2>
+      <p>
+        नए बैच के लिए एडमिशन चालू हैं।  
+        परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर प्रशिक्षण दिया जाता है।
+      </p>
     </div>
 
-    <div class="contact">
-      <a class="call" href="tel:7425805337">कॉल करें</a>
-      <a href="https://wa.me/917425805337" target="_blank">व्हाट्सएप करें</a>
-      <p class="tip">टिप: हमारा नंबर सेव करें और व्हाट्सएप पर मैसेज करें</p>
+    <div class="card">
+      <h2>संपर्क करें</h2>
+      <p>
+        📍 Sawariya Computer Institute<br><br>
+
+        📞 मोबाइल 1:
+        <a href="tel:+917425805337">7425805337</a><br><br>
+
+        📞 मोबाइल 2:
+        <a href="tel:+917851988875">7851988875</a><br><br>
+
+        📧 ई-मेल:
+        <a href="mailto:ujjubanna123@gmail.com">
+          ujjubanna123@gmail.com
+        </a>
+      </p>
     </div>
 
-  </div>
+  </main>
 
   <footer>
     © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट | सभी अधिकार सुरक्षित
