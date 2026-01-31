@@ -1,0 +1,306 @@
+-1
++1
+    <meta property="og:title" content="Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका" />
+    <meta
+      property="og:description"
+      content="Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका। कॉल, व्हाट्सएप, ईमेल, इंस्टाग्राम और लोकेशन के साथ तुरंत संपर्क करें।"
+      content="Tally आज सबसे ज्यादा इस्तेमाल होने वाला अकाउंटिंग सॉफ्टवेयर है। छोटी दुकान से लेकर बड़ी कंपनी तक हर जगह Tally की जरूरत होती है।"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://replit.com/public/images/opengraph.png" />
+-1
++1
+    <meta name="twitter:title" content="Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका" />
+    <meta
+      name="twitter:description"
+      content="Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका। कॉल, व्हाट्सएप, ईमेल, इंस्टाग्राम और लोकेशन के साथ तुरंत संपर्क करें।"
+      content="Tally आज सबसे ज्यादा इस्तेमाल होने वाला अकाउंटिंग सॉफ्टवेयर है। छोटी दुकान से लेकर बड़ी कंपनी तक हर जगह Tally की जरूरत होती है।"
+    />
+    <meta name="twitter:image" content="https://replit.com/public/images/opengraph.png" />
+-216
++86
+        --blue-800: #0e2f59;
+        --blue-700: #16457f;
+        --blue-500: #2a79e6;
+        --gold-500: #d4af37;
+        --gold-400: #e5c35a;
+        --text: #0d1729;
+        --muted: #5a6b86;
+        --card: rgba(255, 255, 255, 0.88);
+        --card: rgba(255, 255, 255, 0.92);
+        --stroke: rgba(10, 34, 66, 0.12);
+        --shadow: 0 18px 40px rgba(6, 22, 45, 0.16);
+        --radius: 18px;
+        --container: 980px;
+      }
+      * {
+        box-sizing: border-box;
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        font-family: "Hind", "Poppins", system-ui;
+        color: var(--text);
+        background: radial-gradient(1200px 700px at 20% 0%, rgba(42, 121, 230, 0.22), transparent 55%),
+                    linear-gradient(180deg, #f7fbff 0%, #ffffff 55%);
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family: "Hind", "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 700px at 20% 0%, rgba(42, 121, 230, 0.22), transparent 55%),
+          radial-gradient(1000px 650px at 100% 40%, rgba(212, 175, 55, 0.18), transparent 52%),
+          linear-gradient(180deg, #f7fbff 0%, #ffffff 55%, #f6f8ff 100%);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .container {
+        width: min(100%, var(--container));
+        margin: 0 auto;
+        padding: 18px 16px 28px;
+      }
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 0 16px;
+      }
+      .home {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(10, 34, 66, 0.12);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 12px 20px rgba(6, 22, 45, 0.08);
+        font-weight: 800;
+      }
+      .home:active {
+        transform: translateY(1px);
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(212, 175, 55, 0.45);
+        background: linear-gradient(180deg, rgba(212, 175, 55, 0.20), rgba(212, 175, 55, 0.06));
+        color: var(--blue-900);
+        font-weight: 700;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+      .badge-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--gold-500);
+        box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.18);
+      }
+      .card {
+        border-radius: 24px;
+        border: 1px solid var(--stroke);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.84) 100%);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        position: relative;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        background:
+          radial-gradient(900px 400px at 20% 10%, rgba(42, 121, 230, 0.18), transparent 60%),
+          radial-gradient(700px 350px at 90% 50%, rgba(212, 175, 55, 0.16), transparent 55%);
+        pointer-events: none;
+      }
+      .card-inner {
+        position: relative;
+        padding: 22px 16px 18px;
+      }
+      h1 {
+        margin: 0;
+        font-family: "Poppins", "Hind", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size: clamp(1.55rem, 4.2vw, 2.1rem);
+        line-height: 1.2;
+        letter-spacing: -0.2px;
+        color: var(--blue-950);
+      }
+      .lead {
+        margin: 10px 0 0;
+        color: rgba(13, 23, 41, 0.78);
+        line-height: 1.65;
+        font-size: 1.02rem;
+      }
+      .content {
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(10, 34, 66, 0.10);
+        color: rgba(13, 23, 41, 0.92);
+        line-height: 1.75;
+        font-size: 1.02rem;
+        white-space: pre-line;
+      }
+      .contact {
+        margin-top: 16px;
+        display: grid;
+        gap: 10px;
+      }
+      .pill {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        align-items: center;
+        padding: 12px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(10, 34, 66, 0.12);
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 14px 22px rgba(6, 22, 45, 0.08);
+        transition: transform 140ms ease, box-shadow 140ms ease;
+      }
+      .pill:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 16px 26px rgba(6, 22, 45, 0.10);
+      }
+      .pill-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(22, 69, 127, 0.14), rgba(212, 175, 55, 0.12));
+        border: 1px solid rgba(212, 175, 55, 0.22);
+      }
+      .pill-text {
+        display: grid;
+        gap: 2px;
+      }
+      .pill-label {
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .pill-value {
+        font-size: 1.02rem;
+        font-weight: 800;
+        color: var(--blue-950);
+        overflow-wrap: anywhere;
+      }
+      .footer {
+        padding: 18px 0 22px;
+        color: rgba(13, 23, 41, 0.66);
+        font-size: 0.95rem;
+        text-align: center;
+      }
+      .footer strong {
+        color: var(--blue-950);
+      }
+      @media (min-width: 860px) {
+        .card-inner {
+          padding: 28px 26px 22px;
+        }
+        .contact {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .pill {
+          transition: none;
+        }
+      }
+      a { color: inherit; text-decoration: none; }
+      .container { width: min(100%, var(--container)); margin: 0 auto; padding: 18px 16px 28px; }
+      .topbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 0 16px; }
+      .home { display: inline-flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; border: 1px solid var(--stroke); background: white; font-weight: 800; box-shadow: 0 8px 15px rgba(0,0,0,0.05); }
+      .badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(212, 175, 55, 0.45); background: rgba(212, 175, 55, 0.1); color: var(--blue-900); font-weight: 700; }
+      .card { border-radius: 24px; border: 1px solid var(--stroke); background: var(--card); box-shadow: var(--shadow); overflow: hidden; }
+      .card-inner { padding: 22px 16px; }
+      h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); color: var(--blue-950); margin: 0 0 15px; }
+      section { margin-bottom: 25px; }
+      h2 { font-size: 1.3rem; color: var(--blue-800); border-left: 4px solid var(--gold-500); padding-left: 10px; margin-bottom: 12px; }
+      ul { padding-left: 20px; line-height: 1.7; }
+      li { margin-bottom: 8px; }
+      .fee-box { background: rgba(22, 69, 127, 0.05); padding: 15px; border-radius: 12px; display: inline-block; font-weight: 700; color: var(--blue-900); }
+      .contact-grid { display: grid; gap: 10px; margin-top: 30px; }
+      .pill { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; padding: 12px; border-radius: 14px; border: 1px solid var(--stroke); background: white; transition: transform 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+      .pill:hover { transform: translateY(-2px); }
+      .pill-icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: rgba(212, 175, 55, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); }
+      .pill-label { font-size: 0.85rem; color: var(--muted); }
+      .pill-value { font-weight: 800; color: var(--blue-950); }
+      .footer { text-align: center; padding: 30px 0; color: var(--muted); border-top: 1px solid var(--stroke); margin-top: 40px; }
+      @media (min-width: 768px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+  </head>
+  <body>
+    <main class="container" data-testid="page-tally">
+    <main class="container">
+      <div class="topbar">
+        <a class="home" href="/" data-testid="link-home">
+          <span aria-hidden="true">←</span>
+          <span>होम</span>
+        </a>
+        <a href="/" class="home">← होम</a>
+        <div class="badge"><span>Tally</span></div>
+      </div>
+        <div class="badge" data-testid="badge-course">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Tally</span>
+      <div class="card">
+        <div class="card-inner">
+          <h1>Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका</h1>
+          
+          <section>
+            <p>Tally आज सबसे ज्यादा इस्तेमाल होने वाला अकाउंटिंग सॉफ्टवेयर है। छोटी दुकान से लेकर बड़ी कंपनी तक हर जगह Tally की जरूरत होती है।</p>
+          </section>
+          <section>
+            <h2>Tally क्यों जरूरी है?</h2>
+            <ul>
+              <li>हर दुकान और ऑफिस में अकाउंटिंग</li>
+              <li>GST, बिलिंग और रिपोर्टिंग</li>
+              <li>जल्दी नौकरी के अवसर</li>
+              <li>कम पढ़ाई में अच्छा करियर</li>
+            </ul>
+          </section>
+          <section>
+            <h2>करियर विकल्प</h2>
+            <ul>
+              <li>Tally ऑपरेटर, अकाउंटेंट, बिलिंग एग्जीक्यूटिव, GST असिस्टेंट, बिजनेस अकाउंटिंग</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Tally में क्या सीखेंगे?</h2>
+            <ul>
+              <li>कंपनी बनाना, लेजर बनाना, खरीद और बिक्री एंट्री, कैश / बैंक एंट्री, डेबिट और क्रेडिट कॉन्सेप्ट, GST सेटअप और इनवॉइस, प्रॉफिट एंड लॉस, बैलेंस शीट, TDS जानकारी, स्टॉक और इन्वेंट्री, रियल ऑफिस प्रैक्टिकल</li>
+            </ul>
+          </section>
+          <section>
+            <h2>अवधि और फीस</h2>
+            <div class="fee-box">
+              अवधि: 3 महीने<br>
+              फीस: ₹6000
+            </div>
+          </section>
+          <div class="contact-grid">
+            <a class="pill" href="tel:7425805337">
+              <span class="pill-icon">📞</span>
+              <div class="pill-text"><span class="pill-label">कॉल</span><br><span class="pill-value">7425805337</span></div>
+            </a>
+            <a class="pill" href="https://wa.me/917425805337">
+              <span class="pill-icon">💬</span>
+              <div class="pill-text"><span class="pill-label">व्हाट्सएप</span><br><span class="pill-value">मैसेज भेजें</span></div>
+            </a>
+            <a class="pill" href="mailto:ujjubanna123@gmail.com">
+              <span class="pill-icon">✉️</span>
+              <div class="pill-text"><span class="pill-label">ईमेल</span><br><span class="pill-value">संपर्क करे...
+[truncated]
+[truncated]
+[truncated]
